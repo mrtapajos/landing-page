@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    font-size: 100%;
+    background-image: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    background-size: cover;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 30px;
+}
+.navegacao {
+    display: flex;
+    gap: 30px;
+    height: 30px;    
+   
+}
+.cabecalho-item {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    display: inline-block;
+    position: relative; 
+}
+
+
+ /* ANIMACAO DO UNDERLINE  */
+
+.cabecalho-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.cabecalho-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* -------------------------- */
+
+.cabecalho-item:hover {
+    color: grey;
+}
+
+.cabecalho-item:not(:first-of-type){
+    border-left: 1px solid white;
+    padding-left: 7px;
+}
+
+
+.cabecalho-imagem {
+    height: 50px;
+}
+
+.sessao-superior {
+    border-top: 0.1px solid whitesmoke;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sessao-superior-titulo {
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 64px
+}
+.sessao-superior-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sessao-superior button {
+    width: 50%;
+    justify-content: space-around;
+    background-color: #ECD6C4;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    width: 150px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sessao-superior button:hover {
+    background-color: #8E5D52;
+}
+
+.menu-principal {
+    border-bottom: 0.2px solid white;
+}
+
+.sessao-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sessao-inferior-titulo {
+    border-top: 0.2px solid white;
+    padding-top: 20px;
+    font-family: cursive;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.sessao-inferior p {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.rodape img {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    overflow: hidden;
+}
