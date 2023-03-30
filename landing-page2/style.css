@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#title {
+    line-height: 10px;
+    flex-direction: column;
+}
+
+a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #9B06CE;
+    transition: 0.3s;
+}
+
+a:last-of-type{
+    border: 2px solid #9B06CE;
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px;
+    padding: 10px;
+}
+a:last-of-type:hover {
+    background-color: #9B06CE;
+    color: white;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+
+.sub-title {
+    color: #9B06CE;
+    font-family: poppinsmedium;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+p {
+    max-width: 500px;
+    line-height: 25px;
+    font-family: poppinslight;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    max-width: 70%;
+    border-radius: 3px;
+    margin-top: 15px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+input:last-of-type{
+    background-color: #9B06CE;
+    max-width: 30%;
+    height: 40px;
+    color: white;
+}
+input:last-of-type:hover {
+    background-color: rgb(34, 34, 34);
+    color: #9B06CE;
+    transition: 0.3s;
+    border: 1px solid #9B06CE;
+}
